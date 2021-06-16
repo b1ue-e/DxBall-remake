@@ -2,6 +2,8 @@ package Demension2D;
 
 public class Position {
 	public int x,y;
+	public int dirX = 0;
+	public int dirY = 0;
 	public Position(){
 		this.x = 0;
 		this.y = 0;
@@ -22,6 +24,17 @@ public class Position {
 	public void setY(int y) {
 		this.y = y;
 	}
-	
+	public int getDirX() {
+		return dirX;
+	}
+	public void setDirX(int dirX) {
+		this.dirX = dirX;
+	}
+	public int getDirY() {
+		return dirY;
+	}
+	public void setDirY(int dirY) {
+		this.dirY = dirY;
+	}
 	
 }

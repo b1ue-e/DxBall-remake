@@ -1,10 +1,13 @@
 package Objects;
 
 import Demension2D.Position;
+import Map.Map;
 
 
 public abstract class Objects {
 	/*生成Ball、Block、Board基本属性*/
+	
+	Map map;
 	int width;
 	int length;
 	int speed;
@@ -27,10 +30,10 @@ public abstract class Objects {
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-	public Position getP() {
+	public Position getPosition() {
 		return p;
 	}
-	public void setP(Position p) {
+	public void setPosition(Position p) {
 		this.p = p;
 	}
 	public abstract void runRt();
