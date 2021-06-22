@@ -7,10 +7,11 @@ import Map.Map;
 public abstract class Objects {
 	/*生成Ball、Block、Board基本属性*/
 	
-	Map map;
+	//Map map = new Map();
 	int width;
 	int length;
 	int speed;
+	int r;
 	Position p = new Position();
 	public int getWidth() {
 		return width;
@@ -36,6 +37,11 @@ public abstract class Objects {
 	public void setPosition(Position p) {
 		this.p = p;
 	}
+	public int getR() {
+		// TODO Auto-generated method stub
+		return this.r;
+	}
+	
 	public abstract void runRt();
 	
 }
